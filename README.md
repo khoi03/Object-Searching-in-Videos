@@ -66,6 +66,8 @@ To determine whether the pixel values of the object fall within the red color ra
   
   ![cmask](https://github.com/khoi03/Object-Searching-in-Videos/assets/80579165/c92b395d-4924-4923-a60d-ba56ed56d242)
 
+Eventually, I can determine whether the detected truck is red by calculating the ratio of red pixels to the total object's pixels and setting a specific threshold for it.
+
 ### iii. Level 3
 At this final stage, I incorporate the use of the `YOLOv8` model and [Detector-Free Local Feature Matching with Transformers](https://github.com/zju3dv/LoFTR) model (LoFTR for short), you can find their paper [here](https://arxiv.org/pdf/2104.00680.pdf). 
 - The first task follows similar procedures to those of Level 1, but it focuses on `human` class.
