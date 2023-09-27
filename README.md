@@ -4,15 +4,15 @@
 In this task, I will focus on three different levels of searching for objects within videos:
 - **Level 1:** Find similar objects with no properties: `A truck`.
   
-  ![Level 1](https://github.com/khoi03/Object-Searching-in-Videos/assets/80579165/67b249bc-3fa2-46ce-9d84-fdb7d3ffe977)
+  ![Level 1](Input/Level%201.jpg)
 
 - **Level 2:** Find object with color property: `The red truck`.
   
-  ![Level 2](https://github.com/khoi03/Object-Searching-in-Videos/assets/80579165/ebcea93c-e56f-4110-9e7e-2fe7ffe8737d)
+  ![Level 2](Input/Level%202.jpg)
 
 - **Level 3:** `Find this person`
   
-  ![Level 3](https://github.com/khoi03/Object-Searching-in-Videos/assets/80579165/604f2c98-73e1-499d-8ad2-8be2034fd002)
+  ![Level 3](Input/Level%203.jpg)
 
 Eventually, I locate all frames and draw bounding boxes around the finding object X in the videos, and then export these frames as JPG files. 
 <details>
@@ -57,23 +57,23 @@ Moving to the next stage, I commence by replicating the procedures of Level 1. u
 
 - Identified Object:
   
-  ![object](https://github.com/khoi03/Object-Searching-in-Videos/assets/80579165/1149a79b-00a3-42bc-ba40-005ca8702b0f)
+  ![object](Media/object.jpg)
 
 - Object's mask:
   
-  ![mask](https://github.com/khoi03/Object-Searching-in-Videos/assets/80579165/eb8dc3d3-2116-4391-b9e6-70a0447e7002)
+  ![mask](Media/mask.jpg)
 
 In the event that the background contains elements with a similar color to the object, I further enhance accuracy by extracting the detected object based on its mask and applying a color detection algorithm as follows:
 
 - Extracted object:
   
-  ![extract](https://github.com/khoi03/Object-Searching-in-Videos/assets/80579165/543772d6-9b6f-4907-b453-26fb30ac7509)
+  ![extract](Media/extract.jpg)
 
 To determine whether the pixel values of the object fall within the red color range, I check if the values for the blue and green channels are in the range (0, 50) and for the red channel are in the range (120, 255). Subsequently, I obtain the following red mask:
 
 - Red mask:
   
-  ![cmask](https://github.com/khoi03/Object-Searching-in-Videos/assets/80579165/c92b395d-4924-4923-a60d-ba56ed56d242)
+  ![cmask](Media/cmask.jpg)
 
 Eventually, I can determine whether the detected truck is red by calculating the ratio of red pixels to the total object's pixels and setting a specific threshold for it.
 
@@ -82,7 +82,7 @@ At this final stage, I incorporate the use of the `YOLOv8` model and [Detector-F
 - The first task follows similar procedures to those of Level 1, but it focuses on `human` class.
 - Next step is to identify the similarities between the target person (input for this task) and the detected person. LoFTR identifies and extracts keypoints from the given image and the detected human. It then establishes mappings between pairs of keypoints and provides confidence scores for these pairs, you will have a deeper understanding through the following example:
 
-![LoFTR_example](https://github.com/khoi03/Object-Searching-in-Videos/assets/80579165/ddb980f1-11cc-41df-a1fa-accee8880bab)
+![LoFTR_example](Media/LoFTR_example.jpg)
 
 - Subsequently, I check if the number of confidence scores greater than 0.5 satisfies a particular threshold (I use a threshold of 65 in my code). Eventually, I employ YOLOv8 model to track ID of the detected human. If the model loses track of the person, the process will restart.
   
