@@ -74,7 +74,6 @@ class OSV2:
                 x1, x2 = int(b[1]), int(b[3])
                 y1, y2 = int(b[0]), int(b[2])
                 
-                
                 object_mask_resize = object_mask_resize[x1:x2, y1:y2]
                 object_extract = cv.bitwise_and(frame[x1:x2, y1:y2], frame[x1:x2, y1:y2], mask=object_mask_resize)
                 related_color_mask = self.color_mask(self.thresholds, object_extract)
@@ -115,7 +114,6 @@ class OSV2:
             # cv.imshow('YOLO V8 Detection', annotated_frame)
             # if cv.waitKey(1) & 0xFF == ord(' '):
             #     break
-            
             output_path = self.output_path + '/Frame {}.jpg'.format(i)
             if self.flag == 1:
                 cv.imwrite(output_path, annotated_frame)
@@ -126,5 +124,5 @@ class OSV2:
     
     
 if __name__ == '__main__':
-    lvl2 = OSV2('yolov8l-seg.pt', './Videos/Video 3.mp4', './OutputFrame/Level2/')
+    lvl2 = OSV2('yolov8l-seg.pt', './Videos/Video 1.mp4', 'OutputFrame/Level2')
     lvl2()

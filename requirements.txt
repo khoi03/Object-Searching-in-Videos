@@ -3,5 +3,6 @@ torch
 torchvision
 torchaudio
 ultralytics
+lapx
 kornia
 tqdm

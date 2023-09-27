@@ -9,6 +9,7 @@ video_folder = './Videos/'
 output_folder = './OutputFrame/'
 
 for file_name in os.listdir(video_folder):
+    print(file_name)
     head_name = os.path.splitext(file_name)[0]
     
     input_path = os.path.join(video_folder, file_name)
@@ -21,15 +22,15 @@ for file_name in os.listdir(video_folder):
         lvl3 = OSV3(model_name, input_path, output_path3, input_img, 'outdoor')
 
         lvl3()
-    else:
-        #level 1
-        output_path1 = output_path + '/Object Truck'
-        lvl1 = OSV1(model_name, input_path, output_path1)
-        lvl1()
+    # else:
+    #     #level 1
+    #     output_path1 = output_path + '/Object Truck'
+    #     lvl1 = OSV1(model_name, input_path, output_path1)
+    #     lvl1()
         
-        #level 2
-        output_path2 = output_path + '/Object Red Truck'
-        lvl2 = OSV2(model_name, input_path, output_path2)
-        lvl2()
+    #     #level 2
+    #     output_path2 = output_path + '/Object Red Truck'
+    #     lvl2 = OSV2(model_name, input_path, output_path2)
+    #     lvl2()
     
     
