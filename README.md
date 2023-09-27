@@ -32,23 +32,40 @@ Eventually, I locate all frames and draw bounding boxes around the finding objec
 
 ## Table of contents:
 
-1. [Approach](https://github.com/khoi03/Object-Searching-in-Videos#1-approach)
+1. [How to run this repository](https://github.com/khoi03/Object-Searching-in-Videos#1-how-to-run-this-repository)
+   
+2. [Approach](https://github.com/khoi03/Object-Searching-in-Videos#2-approach)
 
     1. [Level 1](https://github.com/khoi03/Object-Searching-in-Videos#i-level-1)
     
     2. [Level 2](https://github.com/khoi03/Object-Searching-in-Videos#ii-level-2)
     
     3. [Level 3](https://github.com/khoi03/Object-Searching-in-Videos#iii-level-3)
-     
-2. [Results](https://github.com/khoi03/Object-Searching-in-Videos#2-results)
+
+3. [Results](https://github.com/khoi03/Object-Searching-in-Videos#3-results)
    
     1. [Level 1](https://github.com/khoi03/Object-Searching-in-Videos#i-level-1-1)
     
     2. [Level 2](https://github.com/khoi03/Object-Searching-in-Videos#ii-level-2-1)
     
     3. [Level 3](https://github.com/khoi03/Object-Searching-in-Videos#iii-level-3-1)
-       
-## 1. Approach
+
+## 1. How to run this repository
+I recommend creating an anaconda environment:
+```
+conda create --name [name] python=3.9
+```
+
+Then, install Python requirements:
+```
+pip install -r requirements.txt
+```
+Finally, to reproduce the results, you first have to download the provided example videos here. Then from the `[name]` project root, run:
+```
+python demo.py
+```
+
+## 2. Approach
 ### i. Level 1
 At this level, I employ `YOLOv8` model to detect all objects in the video, and subsequently I extract and draw bounding boxes exclusively around objects classified as `truck`.
 
@@ -86,7 +103,7 @@ At this final stage, I incorporate the use of the `YOLOv8` model and [Detector-F
 
 - Subsequently, I check if the number of confidence scores greater than 0.5 satisfies a particular threshold (I use a threshold of 65 in my code). Eventually, I employ YOLOv8 model to track ID of the detected human. If the model loses track of the person, the process will restart.
   
-## 2. Results
+## 3. Results
 In this section, I will provide an overview of the results from the provided examples, which you can access and download from here. Furthermore, please access the result frames for each video level via the following link.
 ### i. Level 1
 - Video 1:
