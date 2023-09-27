@@ -53,14 +53,14 @@ Eventually, I locate all frames and draw bounding boxes around the finding objec
 ## 1. How to run this repository
 I recommend creating an anaconda environment:
 ```
-conda create --name [name] python=3.9
+conda create --name [environment-name] python=3.9
 ```
 
 Then, install Python requirements:
 ```
 pip install -r requirements.txt
 ```
-Finally, to reproduce the results, you first have to download the provided example videos here. Then from the `[name]` project root, run:
+Finally, to reproduce the results, you first have to download the provided example videos here. Then from the `[environment-name]` project root, run:
 ```
 python demo.py
 ```
