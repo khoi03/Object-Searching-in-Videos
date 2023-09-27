@@ -3,12 +3,15 @@
 ## Introduction
 In this task, I will focus on three different levels of searching for objects within videos:
 - **Level 1:** Find similar objects with no properties: `A truck`.
+  
   ![Level 1](https://github.com/khoi03/Object-Searching-in-Videos/assets/80579165/67b249bc-3fa2-46ce-9d84-fdb7d3ffe977)
 
 - **Level 2:** Find object with color property: `The red truck`.
+  
   ![Level 2](https://github.com/khoi03/Object-Searching-in-Videos/assets/80579165/ebcea93c-e56f-4110-9e7e-2fe7ffe8737d)
 
 - **Level 3:** `Find this person`
+  
   ![Level 3](https://github.com/khoi03/Object-Searching-in-Videos/assets/80579165/604f2c98-73e1-499d-8ad2-8be2034fd002)
 
 Eventually, I locate all frames and draw bounding boxes around the finding object X in the videos, and then export these frames as JPG files. The structure of the output folders is as follows:
