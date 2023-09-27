@@ -42,11 +42,11 @@ Eventually, I locate all frames and draw bounding boxes around the finding objec
      
 2. [Results](https://github.com/khoi03/Object-Searching-in-Videos#2-results)
    
-    1. [Level 1](https://github.com/khoi03/Object-Searching-in-Videos#i-level-1)
+    1. [Level 1](https://github.com/khoi03/Object-Searching-in-Videos#i-level-1-1)
     
-    2. [Level 2](https://github.com/khoi03/Object-Searching-in-Videos#ii-level-2)
+    2. [Level 2](https://github.com/khoi03/Object-Searching-in-Videos#ii-level-2-1)
     
-    3. [Level 3](https://github.com/khoi03/Object-Searching-in-Videos#iii-level-3)
+    3. [Level 3](https://github.com/khoi03/Object-Searching-in-Videos#iii-level-3-1)
        
 ## 1. Approach
 ### i. Level 1
