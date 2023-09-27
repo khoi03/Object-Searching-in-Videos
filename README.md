@@ -60,7 +60,7 @@ Then, install Python requirements:
 ```
 pip install -r requirements.txt
 ```
-Finally, to reproduce the results, you first have to download the provided example videos here. Then from the `[environment-name]` project root, run:
+Finally, to reproduce the results, you first have to download the provided example videos [here](https://uithcm-my.sharepoint.com/:f:/g/personal/20521482_ms_uit_edu_vn/Eo_svNSYVghLkWb_zqoVVE0BEpb-Bzmp5NDC3_3Wh1eB-g?e=2ZoVOa). Then from the `[environment-name]` project root, run:
 ```
 python demo.py
 ```
@@ -104,7 +104,7 @@ At this final stage, I incorporate the use of the `YOLOv8` model and [Detector-F
 - Subsequently, I check if the number of confidence scores greater than 0.5 satisfies a particular threshold (I use a threshold of 65 in my code). Eventually, I employ YOLOv8 model to track ID of the detected human. If the model loses track of the person, the process will restart.
   
 ## 3. Results
-In this section, I will provide an overview of the results from the provided examples, which you can access and download from here. Furthermore, please access the result frames for each video level via the following link.
+In this section, I will provide an overview of the results from the provided examples, which you can access and download from [here](https://uithcm-my.sharepoint.com/:f:/g/personal/20521482_ms_uit_edu_vn/Eo_svNSYVghLkWb_zqoVVE0BEpb-Bzmp5NDC3_3Wh1eB-g?e=2ZoVOa). Furthermore, please access the result frames for each video level via the following [link](https://uithcm-my.sharepoint.com/:f:/g/personal/20521482_ms_uit_edu_vn/EtuOSkYURstCo4GwnQ2j7TABLZQ2C7PyziCb9Uw2Uqx2HQ?e=3K6lMe).
 ### i. Level 1
 - Video 1:
   - Frame 103: 
