@@ -14,18 +14,21 @@ In this task, I will focus on three different levels of searching for objects wi
   
   ![Level 3](https://github.com/khoi03/Object-Searching-in-Videos/assets/80579165/604f2c98-73e1-499d-8ad2-8be2034fd002)
 
-Eventually, I locate all frames and draw bounding boxes around the finding object X in the videos, and then export these frames as JPG files. The structure of the output folders is as follows:
+Eventually, I locate all frames and draw bounding boxes around the finding object X in the videos, and then export these frames as JPG files. 
+<details>
+<summary>The structure of the output folders is as follows:</summary>
+  
 - Video 1
-  - Object X
-    - Frame 15.jpg
-    - Frame 32.jpg
-    - Frame 120.jpg
+    - Object X
+      - Frame 15.jpg
+      - Frame 32.jpg
+      - Frame 120.jpg
 - Video 2
   - Object X
 - Video 3
   - Object X
     - Frame 215.jpg
-
+</details>
 
 ## Table of contents:
 
@@ -38,7 +41,13 @@ Eventually, I locate all frames and draw bounding boxes around the finding objec
     3. [Level 3](https://github.com/khoi03/Object-Searching-in-Videos#iii-level-3)
      
 2. [Results](https://github.com/khoi03/Object-Searching-in-Videos#2-results)
-
+   
+    1. [Level 1](https://github.com/khoi03/Object-Searching-in-Videos#i-level-1)
+    
+    2. [Level 2](https://github.com/khoi03/Object-Searching-in-Videos#ii-level-2)
+    
+    3. [Level 3](https://github.com/khoi03/Object-Searching-in-Videos#iii-level-3)
+       
 ## 1. Approach
 ### i. Level 1
 At this level, I employ `YOLOv8` model to detect all objects in the video, and subsequently I extract and draw bounding boxes exclusively around objects classified as `truck`.
