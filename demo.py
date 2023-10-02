@@ -22,15 +22,15 @@ for file_name in os.listdir(video_folder):
         lvl3 = OSV3(model_name, input_path, output_path3, input_img, 'outdoor')
 
         lvl3()
-    # else:
-    #     #level 1
-    #     output_path1 = output_path + '/Object Truck'
-    #     lvl1 = OSV1(model_name, input_path, output_path1)
-    #     lvl1()
+    else:
+        #level 1
+        output_path1 = output_path + '/Object Truck'
+        lvl1 = OSV1(model_name, input_path, output_path1)
+        lvl1()
         
-    #     #level 2
-    #     output_path2 = output_path + '/Object Red Truck'
-    #     lvl2 = OSV2(model_name, input_path, output_path2)
-    #     lvl2()
+        #level 2
+        output_path2 = output_path + '/Object Red Truck'
+        lvl2 = OSV2(model_name, input_path, output_path2)
+        lvl2()
     
     
